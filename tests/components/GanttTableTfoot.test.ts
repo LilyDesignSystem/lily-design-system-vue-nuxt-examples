@@ -1,7 +1,7 @@
 import { describe, expect, test } from "vitest";
 import { render } from "@testing-library/vue";
 
-import Subject from "../../components/GanttTableBody.vue";
+import Subject from "../../components/GanttTableTfoot.vue";
 
 
 function renderInTable(props: Record<string, unknown>, slotContent?: string) {
@@ -13,22 +13,22 @@ function renderInTable(props: Record<string, unknown>, slotContent?: string) {
     return { ...result, container };
 }
 
-describe("GanttTableBody", () => {
-    test("renders a tbody element", () => {
-        renderInTable({}, "<tr><td>Design</td></tr>");
-        const tbody = document.querySelector("tbody");
-        expect(tbody).toBeTruthy();
+describe("GanttTableTfoot", () => {
+    test("renders a tfoot element", () => {
+        renderInTable({}, "<tr><td>Total: 12</td></tr>");
+        const tfoot = document.querySelector("tfoot");
+        expect(tfoot).toBeTruthy();
     });
 
     test("renders children content", () => {
-        renderInTable({}, "<tr><td>Jan 1</td></tr>");
+        renderInTable({}, "<tr><td>Total: 12 tasks</td></tr>");
         const td = document.querySelector("td");
-        expect(td?.textContent).toBe("Jan 1");
+        expect(td?.textContent).toBe("Total: 12 tasks");
     });
 
     test("passes through attributes", () => {
-        renderInTable({ "data-testid": "body" }, "<tr><td>x</td></tr>");
-        const tbody = document.querySelector("tbody");
-        expect(tbody?.getAttribute("data-testid")).toBe("body");
+        renderInTable({ "data-testid": "foot" }, "<tr><td>x</td></tr>");
+        const tfoot = document.querySelector("tfoot");
+        expect(tfoot?.getAttribute("data-testid")).toBe("foot");
     });
 });

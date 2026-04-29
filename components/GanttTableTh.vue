@@ -1,9 +1,9 @@
 <script setup lang="ts">
 
-    // GanttTableCol component
+    // GanttTableTh component
     //
     // A column header cell within a GanttTable, rendered as a <th> element.
-    // Used inside a <GanttTableRow> within <GanttTableHead> to label time
+    // Used inside a <GanttTableTr> within <GanttTableThead> to label time
     // period columns of the Gantt grid.
     //
     // Props:
@@ -36,9 +36,9 @@
 </script>
 
 <template>
-    <!-- GanttTableCol.vue -->
+    <!-- GanttTableTh.vue -->
     <th
-        class="gantt-table-col"
+        class="gantt-table-th"
         :scope="scope"
         :colspan="colspan || undefined"
         :rowspan="rowspan || undefined"

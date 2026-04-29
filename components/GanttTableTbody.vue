@@ -1,22 +1,22 @@
 <script setup lang="ts">
 
-    // GanttTableBody component
+    // GanttTableTbody component
     //
     // The body section of a GanttTable, rendered as a <tbody> element.
-    // Contains GanttTableRow elements with task data cells.
+    // Contains GanttTableTr elements with task data cells.
     //
     // Props:
     //   className — string, optional. CSS class name.
-    //   default slot. GanttTableRow elements with data cells.
+    //   default slot. GanttTableTr elements with data cells.
     //   ...restProps — additional HTML attributes spread onto the <tbody>.
     //
     // Syntax:
-    //   <GanttTableBody>
-    //     <GanttTableRow>
-    //       <GanttTableData>Design</GanttTableData>
-    //       <GanttTableData>Jan 1</GanttTableData>
-    //     </GanttTableRow>
-    //   </GanttTableBody>
+    //   <GanttTableTbody>
+    //     <GanttTableTr>
+    //       <GanttTableTd>Design</GanttTableTd>
+    //       <GanttTableTd>Jan 1</GanttTableTd>
+    //     </GanttTableTr>
+    //   </GanttTableTbody>
     //
     // Keyboard:
     //   None built-in — keyboard navigation handled at the GanttTable grid level.
@@ -35,9 +35,9 @@
 </script>
 
 <template>
-    <!-- GanttTableBody.vue -->
+    <!-- GanttTableTbody.vue -->
     <tbody
-        class="gantt-table-body"
+        class="gantt-table-tbody"
     >
         <slot />
     </tbody>

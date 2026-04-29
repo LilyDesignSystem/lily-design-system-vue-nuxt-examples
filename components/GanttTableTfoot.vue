@@ -1,21 +1,21 @@
 <script setup lang="ts">
 
-    // GanttTableFoot component
+    // GanttTableTfoot component
     //
     // The footer section of a GanttTable, rendered as a <tfoot> element.
-    // Contains GanttTableRow elements with summary or aggregate data cells.
+    // Contains GanttTableTr elements with summary or aggregate data cells.
     //
     // Props:
     //   className — string, optional. CSS class name.
-    //   default slot. GanttTableRow elements with footer cells.
+    //   default slot. GanttTableTr elements with footer cells.
     //   ...restProps — additional HTML attributes spread onto the <tfoot>.
     //
     // Syntax:
-    //   <GanttTableFoot>
-    //     <GanttTableRow>
-    //       <GanttTableData>Total: 12 tasks</GanttTableData>
-    //     </GanttTableRow>
-    //   </GanttTableFoot>
+    //   <GanttTableTfoot>
+    //     <GanttTableTr>
+    //       <GanttTableTd>Total: 12 tasks</GanttTableTd>
+    //     </GanttTableTr>
+    //   </GanttTableTfoot>
     //
     // Keyboard:
     //   None built-in — keyboard navigation handled at the GanttTable grid level.
@@ -34,9 +34,9 @@
 </script>
 
 <template>
-    <!-- GanttTableFoot.vue -->
+    <!-- GanttTableTfoot.vue -->
     <tfoot
-        class="gantt-table-foot"
+        class="gantt-table-tfoot"
     >
         <slot />
     </tfoot>

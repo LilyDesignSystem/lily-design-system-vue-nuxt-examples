@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-    // QrCode component
+    // QrCodeImage component
     //
     // A headless container for displaying a QR code (two-dimensional barcode) that
     // encodes data such as URLs, text, contact information, or other machine-readable
@@ -17,18 +17,18 @@
     //   ...restProps — additional HTML attributes spread onto the <div>.
     //
     // Syntax:
-    //   <QrCode label="Scan to visit example.com">{qrSvg}</QrCode>
+    //   <QrCodeImage label="Scan to visit example.com">{qrSvg}</QrCodeImage>
     //
     // Examples:
     //   <!-- QR code with SVG rendering -->
-    //   <QrCode label="Scan to visit example.com">
+    //   <QrCodeImage label="Scan to visit example.com">
     //     <svg><!-- QR code SVG paths --></svg>
-    //   </QrCode>
+    //   </QrCodeImage>
     //
     //   <!-- QR code with canvas rendering -->
-    //   <QrCode label="Scan to download the app">
+    //   <QrCodeImage label="Scan to download the app">
     //     <canvas v-model:this></canvas>
-    //   </QrCode>
+    //   </QrCodeImage>
     //
     // Keyboard:
     //   None — this is a passive display container with no interactive behavior.
@@ -57,9 +57,9 @@
 </script>
 
 <template>
-    <!-- QrCode.vue -->
+    <!-- QrCodeImage.vue -->
     <div
-        class="qr-code"
+        class="qr-code-image"
         role="img"
         :aria-label="label"
     >

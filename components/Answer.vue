@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
-    // Comment component
+    // Answer component
     //
-    // A comment is anything that expresses an opinion, observation, explanation, etc.
+    // An answer is anything that responds to a question, request, action, etc.
     //
     // Props:
     //   label — string, optional. Accessible label via aria-label.
@@ -25,9 +25,9 @@
 </script>
 
 <template>
-    <!-- Comment.vue -->
+    <!-- Answer.vue -->
     <div
-        class="comment"
+        class="answer"
         :aria-label="label"
         v-bind="$attrs"
     >

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
-    // Comment component
+    // Question component
     //
-    // A comment is anything that expresses an opinion, observation, explanation, etc.
+    // A question is anything that asks for information, invites a response, tests knowledge, etc.
     //
     // Props:
     //   label — string, optional. Accessible label via aria-label.
@@ -25,9 +25,9 @@
 </script>
 
 <template>
-    <!-- Comment.vue -->
+    <!-- Question.vue -->
     <div
-        class="comment"
+        class="question"
         :aria-label="label"
         v-bind="$attrs"
     >

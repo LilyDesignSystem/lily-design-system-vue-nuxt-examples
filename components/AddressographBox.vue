@@ -1,8 +1,9 @@
 <script setup lang="ts">
 
-    // Comment component
+    // AddressographBox component
     //
-    // A comment is anything that expresses an opinion, observation, explanation, etc.
+    // A small printed block of patient identification details (name, date of birth, NHS number, etc.)
+    // historically pressed from an addressograph-box plate onto clinical records.
     //
     // Props:
     //   label — string, optional. Accessible label via aria-label.
@@ -25,9 +26,9 @@
 </script>
 
 <template>
-    <!-- Comment.vue -->
+    <!-- AddressographBox.vue -->
     <div
-        class="comment"
+        class="addressograph-box"
         :aria-label="label"
         v-bind="$attrs"
     >

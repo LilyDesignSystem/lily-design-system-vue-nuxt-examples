@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite';
-import QrCode from './QrCode.vue';
+import Answer from './Answer.vue';
 
 const meta = {
-  title: 'Examples/QrCode',
-  component: QrCode,
+  title: 'Examples/Answer',
+  component: Answer,
   tags: ['autodocs']
-} satisfies Meta<typeof QrCode>;
+} satisfies Meta<typeof Answer>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

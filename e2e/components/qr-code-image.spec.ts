@@ -1,19 +1,19 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('component page: qr-code', () => {
+test.describe('component page: qr-code-image', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('/components/qr-code');
+    await page.goto('/components/qr-code-image');
   });
 
   test('responds with a non-error status', async ({ page }) => {
-    const res = await page.goto('/components/qr-code');
+    const res = await page.goto('/components/qr-code-image');
     expect(res, 'navigation response').not.toBeNull();
     expect(res!.status(), 'http status').toBeLessThan(400);
   });
 
   test('renders the H1 with the component name', async ({ page }) => {
     await expect(
-      page.getByRole('heading', { level: 1, name: new RegExp('^QrCode$') })
+      page.getByRole('heading', { level: 1, name: new RegExp('^QrCodeImage$') })
     ).toBeVisible();
   });
 

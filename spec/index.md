@@ -2,11 +2,11 @@
 
 Living specification for the Nuxt 3 example application that demonstrates the
 Lily Design System. Single source of truth for spec-driven development of
-this subproject. For project-wide rules, read the root [spec.md](../spec.md)
+this subproject. For project-wide rules, read the root [spec/index.md](../../spec/index.md)
 first.
 
 This file adds Nuxt-specific detail and tracks the example app's
-implementation status against the **492 canonical components**.
+implementation status against the **490 canonical components**.
 
 ---
 
@@ -20,7 +20,7 @@ design system working end-to-end.
 The app ships:
 
 - The three required routes (`/`, `/components`, `/components/[slug]`) per
-  [../AGENTS/examples.md](../AGENTS/examples.md).
+  [../AGENTS/examples.md](../../AGENTS/examples.md).
 - Twelve composed-page demos.
 - A complete NHS-aligned stylesheet that targets Lily's kebab-case class
   hooks.
@@ -31,7 +31,7 @@ The app ships:
 
 - A Nuxt 3 app with file-based routing.
 - A `/components/[slug]` route that renders a live demo per component for all
-  492 components (via `data/component-demos.ts`).
+  490 components (via `data/component-demos.ts`).
 - 12 composed-page demos.
 - A complete NHS-aligned CSS stylesheet (`assets/css/nhs.css`).
 - Playwright e2e tests for each `/components/[slug]` route.
@@ -79,10 +79,10 @@ lily-design-system-vue-nuxt-examples/
 │   ├── contact-form.vue                   ← composed-page demos (12)
 │   ├── dashboard.vue
 │   └── …
-├── components/{PascalCase}.vue            ← 492 wrappers re-exporting headless
+├── components/{PascalCase}.vue            ← 490 wrappers re-exporting headless
 ├── data/
-│   ├── component-demos.ts                 ← slug → demo-HTML (492 entries)
-│   └── components.ts                      ← catalog metadata (492 entries)
+│   ├── component-demos.ts                 ← slug → demo-HTML (490 entries)
+│   └── components.ts                      ← catalog metadata (490 entries)
 ├── assets/css/nhs.css                     ← NHS-aligned stylesheet
 ├── tests/components/{PascalCase}.test.ts  ← vitest spec per component
 ├── e2e/components/{kebab-case}.spec.ts    ← Playwright e2e per slug
@@ -100,7 +100,7 @@ lily-design-system-vue-nuxt-examples/
 | `/components/[slug]`   | Per-component detail — live demo + metadata            |
 
 `/components/[slug]` renders the demo HTML from `data/component-demos.ts`
-using `v-html`. Demo data contains **492 entries** (one per canonical slug).
+using `v-html`. Demo data contains **490 entries** (one per canonical slug).
 
 ## 5. Composed-page demos
 
@@ -112,7 +112,7 @@ the SvelteKit / Next.js apps).
 - Plain CSS in `assets/css/nhs.css` with NHS-aligned CSS custom properties.
 - CSS selectors target the kebab-case Lily class names directly.
 - No CSS framework dependency.
-- Theme tokens follow [../AGENTS/theme.md](../AGENTS/theme.md).
+- Theme tokens follow [../AGENTS/theme.md](../../AGENTS/theme.md).
 
 ## 7. Testing
 
@@ -144,14 +144,14 @@ pnpm run storybook                   # run Storybook
 ### 9.1 Routes
 
 - [ ] `/` renders home with skip-link + standard landmarks.
-- [ ] `/components` lists all 492 canonical components.
-- [ ] `/components/[slug]` renders a live demo for all 492 slugs.
+- [ ] `/components` lists all 490 canonical components.
+- [ ] `/components/[slug]` renders a live demo for all 490 slugs.
 - [ ] All 12 composed-page demos exist.
 
 ### 9.2 Demo registry
 
-- [ ] `data/component-demos.ts` exports a 492-entry map.
-- [ ] `data/components.ts` exports a 492-entry catalog (no orphan slugs).
+- [ ] `data/component-demos.ts` exports a 490-entry map.
+- [ ] `data/components.ts` exports a 490-entry catalog (no orphan slugs).
 - [ ] Each demo's class hook matches the canonical kebab-case base class.
 
 ### 9.3 Styling
@@ -184,10 +184,10 @@ pnpm run storybook                   # run Storybook
 - [x] `/components` catalog index.
 - [x] `/components/[slug]` per-component detail with live demo via `v-html`.
 - [x] All 12 composed-page demos.
-- [x] Per-component test suite in `tests/components/` (492 specs).
+- [x] Per-component test suite in `tests/components/` (490 specs).
 - [x] Playwright e2e per slug.
 - [x] Storybook integration (commit `7a51013b`).
-- [x] Demo registry backfill: `component-demos.ts` covers all 492 canonical
+- [x] Demo registry backfill: `component-demos.ts` covers all 490 canonical
       slugs (per commit `1f1772e1`).
 - [x] Catalog metadata cleaned: orphan `medical-record-red-box` removed.
 - [x] TabGroup removal (canonical pattern is TabBar + TabBarButton + TabPanel).
@@ -196,7 +196,7 @@ pnpm run storybook                   # run Storybook
 
 - [x] `pnpm test` (vitest) passes: **1,373 / 1,373 tests, zero failures**.
 - [x] `pnpm exec playwright test` passes: **1,221 / 1,221 specs**
-      (3 specs per `/components/[slug]` route × 492 slugs).
+      (3 specs per `/components/[slug]` route × 490 slugs).
 
 ### 10.3 Open backlog
 
@@ -222,6 +222,6 @@ pnpm run storybook                   # run Storybook
 - Package manager: pnpm
 - License: MIT or Apache-2.0 or GPL-2.0 or GPL-3.0 or BSD-3-Clause
 - Contact: Joel Parker Henderson <joel@joelparkerhenderson.com>
-- Canonical catalog: [../components.tsv](../components.tsv) — 492 components
-- Root spec: [../spec.md](../spec.md)
-- Sibling headless library: [../lily-design-system-vue-headless/](../lily-design-system-vue-headless/)
+- Canonical catalog: [../components.tsv](../../components.tsv) — 490 components
+- Root spec: [../spec/index.md](../../spec/index.md)
+- Sibling headless library: [../lily-design-system-vue-headless/](../../lily-design-system-vue-headless/)

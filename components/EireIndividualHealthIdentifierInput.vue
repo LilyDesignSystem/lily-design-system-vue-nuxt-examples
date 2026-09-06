@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
-    // IrelandIndividualHealthIdentifierInput component
+    // EireIndividualHealthIdentifierInput component
     //
-    // A headless input for entering an Ireland Individual Health Identifier (IHI),
+    // A headless input for entering an Eire Individual Health Identifier (IHI),
     // a 10-digit clinical identifier used by the HSE to safely match patients
     // with their medical records across different hospitals and GPs.
     //
@@ -15,14 +15,14 @@
     //   ...restProps — additional HTML attributes spread onto the <input>.
     //
     // Syntax:
-    //   <IrelandIndividualHealthIdentifierInput label="IHI" v-model />
+    //   <EireIndividualHealthIdentifierInput label="IHI" v-model />
     //
     // Examples:
     //   <!-- Required IHI input -->
-    //   <IrelandIndividualHealthIdentifierInput label="IHI" required />
+    //   <EireIndividualHealthIdentifierInput label="IHI" required />
     //
     //   <!-- Disabled IHI input -->
-    //   <IrelandIndividualHealthIdentifierInput label="IHI" disabled />
+    //   <EireIndividualHealthIdentifierInput label="IHI" disabled />
     //
     // Keyboard:
     //   - Standard text input keyboard behavior
@@ -64,9 +64,9 @@
 </script>
 
 <template>
-    <!-- IrelandIndividualHealthIdentifierInput.vue -->
+    <!-- EireIndividualHealthIdentifierInput.vue -->
     <input
-        class="ireland-individual-health-identifier-input"
+        class="eire-individual-health-identifier-input"
         type="text"
         :aria-label="label"
         inputmode="numeric"

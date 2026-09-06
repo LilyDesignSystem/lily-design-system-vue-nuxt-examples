@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
-    // CyprusNationalPassportNumberView component
+    // KyprosNationalPassportNumberView component
     //
-    // A headless display for Cyprus's National Passport Number.
+    // A headless display for Kypros's National Passport Number.
     // Format: passports before 13/12/2010 begin with 'E' followed by 6 digits (e.g. E123456); biometric passports issued after 13/12/2010 begin with 'K' followed by 8 digits (e.g. K12345678).
     //
     // References:
@@ -18,9 +18,9 @@
 </script>
 
 <template>
-    <!-- CyprusNationalPassportNumberView.vue -->
+    <!-- KyprosNationalPassportNumberView.vue -->
     <span
-        class="cyprus-national-passport-number-view"
+        class="kypros-national-passport-number-view"
         :aria-label="label">{{ value }}</span
     >
 </template>

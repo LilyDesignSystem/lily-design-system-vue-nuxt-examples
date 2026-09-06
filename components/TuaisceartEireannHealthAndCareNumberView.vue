@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-    // NorthernIrelandHealthAndCareNumberView component
+    // TuaisceartEireannHealthAndCareNumberView component
 
     withDefaults(defineProps<{
         label: string;
@@ -12,9 +12,9 @@
 </script>
 
 <template>
-    <!-- NorthernIrelandHealthAndCareNumberView.vue -->
+    <!-- TuaisceartEireannHealthAndCareNumberView.vue -->
     <span
-        class="northern-ireland-health-and-care-number-view"
+        class="tuaisceart-eireann-health-and-care-number-view"
         :aria-label="label"
     >{{ value }}</span>
 </template>

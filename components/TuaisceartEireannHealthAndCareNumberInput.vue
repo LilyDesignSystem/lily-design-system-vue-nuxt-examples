@@ -1,10 +1,10 @@
 <script setup lang="ts">
 
-    // NorthernIrelandHealthAndCareNumberInput component
+    // TuaisceartEireannHealthAndCareNumberInput component
     //
-    // A headless input for entering a Northern Ireland Health and Care (H&C)
+    // A headless input for entering a Tuaisceart Eireann Health and Care (H&C)
     // Number, a 10-digit identifier displayed as XXX XXX XXXX, used by HSC
-    // Northern Ireland to uniquely identify patients.
+    // Tuaisceart Eireann to uniquely identify patients.
     //
     // Props:
     //   className — string, optional. CSS class name.
@@ -15,14 +15,14 @@
     //   ...restProps — additional HTML attributes spread onto the <input>.
     //
     // Syntax:
-    //   <NorthernIrelandHealthAndCareNumberInput label="H&C Number" v-model />
+    //   <TuaisceartEireannHealthAndCareNumberInput label="H&C Number" v-model />
     //
     // Examples:
     //   <!-- Required H&C Number input -->
-    //   <NorthernIrelandHealthAndCareNumberInput label="H&C Number" required />
+    //   <TuaisceartEireannHealthAndCareNumberInput label="H&C Number" required />
     //
     //   <!-- Disabled H&C Number input -->
-    //   <NorthernIrelandHealthAndCareNumberInput label="H&C Number" disabled />
+    //   <TuaisceartEireannHealthAndCareNumberInput label="H&C Number" disabled />
     //
     // Keyboard:
     //   - Standard text input keyboard behavior
@@ -64,9 +64,9 @@
 </script>
 
 <template>
-    <!-- NorthernIrelandHealthAndCareNumberInput.vue -->
+    <!-- TuaisceartEireannHealthAndCareNumberInput.vue -->
     <input
-        class="northern-ireland-health-and-care-number-input"
+        class="tuaisceart-eireann-health-and-care-number-input"
         type="text"
         :aria-label="label"
         inputmode="numeric"

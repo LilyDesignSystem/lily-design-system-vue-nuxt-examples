@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-    // IrelandIndividualHealthIdentifierView component
+    // EireIndividualHealthIdentifierView component
 
     withDefaults(defineProps<{
         label: string;
@@ -12,9 +12,9 @@
 </script>
 
 <template>
-    <!-- IrelandIndividualHealthIdentifierView.vue -->
+    <!-- EireIndividualHealthIdentifierView.vue -->
     <span
-        class="ireland-individual-health-identifier-view"
+        class="eire-individual-health-identifier-view"
         :aria-label="label"
     >{{ value }}</span>
 </template>
